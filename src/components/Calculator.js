@@ -71,8 +71,7 @@ class Calculator extends React.Component {
 
 Calculator.propTypes = {
   updateState: PropTypes.func.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
-  digitObj: PropTypes.object.isRequired,
+  digitObj: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default Calculator;
